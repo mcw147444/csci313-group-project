@@ -1,0 +1,11 @@
+{% extends "base_generic.html" %} {% block title %}
+<title>Catalog</title>
+{% endblock%} {% block content %}
+<h1>Catalog</h1>
+{% for b in book%}
+<div class="differentBack">
+  <hr />
+  <p class="normal">{{b.title}}: {{b.summary}}</p>
+  <hr />
+</div>
+{% endfor %} {% endblock%}
