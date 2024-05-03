@@ -4,7 +4,7 @@
     {% block title %}
     <title>Local Library</title>
     {% endblock %} {% load static %}
-    <link rel="stylesheet" href="{% static 'css/mainStyle.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/mmainStyle.css' %}" />
   </head>
   <body>
     <!--Navbar that includes links to other pages-->
@@ -14,5 +14,10 @@
       <li><a href="{% url 'home' %}">Home</a></li>
     </ul>
     <div>{%block content%}{%endblock%}</div>
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'home' %}">Home</a></li>
+    </ul>
   </body>
 </html>
