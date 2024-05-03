@@ -3,14 +3,16 @@
   <head>
     {% block title %}
     <title>Local Library</title>
-    <!--Navbar that includes links to other pages-->
-    <ul>
-      <li><a href="{% url 'index' %}">Home</a></li>
-    </ul>
     {% endblock %} {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
   </head>
   <body>
+    <!--Navbar that includes links to other pages-->
+    <ul>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'home' %}">Home</a></li>
+      <li><a href="{% url 'home' %}">Home</a></li>
+    </ul>
     {%block content%}{%endblock%}
   </body>
 </html>
