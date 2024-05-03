@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.urls import reverse
 
 # Create your models here.
 class Author(models.Model):
@@ -17,6 +18,8 @@ class Book(models.Model):
     summary=models.CharField(max_length=1000)
     number_of_times_checked_out=models.IntegerField()
     date_checked_out=models.DateTimeField(auto_now_add=True,blank=True)
+    def get_absolute_url(self):
+        return reverse('book-detail', args=[str(self.id)])
 class Language(models.Model):
     name=models.CharField(unique=True,max_length=100)
 class Book_Instance(models.Model):
