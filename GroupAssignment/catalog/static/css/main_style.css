@@ -28,6 +28,12 @@ p{
   color:white;
   font-size: 3vw;
 }
+.normal{
+  font-size: 2vw;
+}
+.differentBack{
+  background-color: darkolivegreen;
+}
 h1{
   color:white;
   font-size: 8vw;
