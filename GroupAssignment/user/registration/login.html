@@ -9,7 +9,7 @@
 <p>Please login to see this page.</p>
 {% endif %} {% endif %}
 
-<form method="post" action="{% url 'login' %}">
+<form method="post" action="logout.html">
   {% csrf_token %}
   <table>
     <tr>
@@ -26,6 +26,6 @@
 </form>
 
 {# Assumes you set up the password_reset view in your URLconf #}
-<p><a href="{% url 'password_reset' %}">Lost password?</a></p>
+<p><a href="password_reset_form">Lost password?</a></p>
 
 {% endblock %}
