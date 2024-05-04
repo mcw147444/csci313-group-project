@@ -1,15 +1,14 @@
-{% extends "base_generic.html" %} {% block title %}
+{% extends "catalog_base_generic.html" %} {% block title %}
 <title>Home</title>
 {% endblock%} {% block content %}
 <h1>Home</h1>
 {% load static %}
-<img src="{% static 'book.jpg' %}" />
-<p>
+<img class="px-3 img-fluid rounded-5" src="{% static 'images/book.jpg' %}" />
+<p class="fs-2 p-2 text-center">
   Welcome to our library website! Here you can browse our selection of books,
   see what is available, and place holds on books that are not currently
   available. To see which books are available, please navagate to the catalog
   page. To see which books you currently have checked out, please sign in and
   navigate to the book's checked out page.
 </p>
-
 {% endblock%}

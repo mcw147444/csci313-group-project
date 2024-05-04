@@ -1,0 +1,21 @@
+{% extends "catalog_base_generic.html" %} {% block title %}
+<title>Catalog</title>
+{% endblock%} {% block content %}
+<h1 class="pb-4">Catalog</h1>
+{% if book_list %}
+<ul class="list-group px-2">
+  {% for book in book_list%}
+  <li>
+    <a
+      class="list-group-item list-group-item-action"
+      href="{{ book.get_absolute_url }}"
+      >{{book.title}}: {{book.summary}}</a
+    >
+  </li>
+  {% endfor %}
+  <ul>
+    {% else %}
+    <p>No books are available.</p>
+    {% endif %} {% endblock %}
+  </ul>
+</ul>
