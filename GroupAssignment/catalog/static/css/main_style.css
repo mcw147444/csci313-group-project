@@ -1,48 +1,8 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color:#111
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
+p {
   color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
 }
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #797979;
-}
-
-body {background-color:darkgreen}
-p{
-  color:white;
-  font-size: 3vw;
-}
-.normal{
-  font-size: 2vw;
-}
-.differentBack{
-  background-color: darkolivegreen;
-}
-h1{
-  color:white;
+h1 {
+  color: white;
   font-size: 8vw;
   text-align: center;
-}
-img {
-  max-width: 75%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
