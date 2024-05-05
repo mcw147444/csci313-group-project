@@ -1,0 +1,13 @@
+{% extends "members_base_generic.html" %} {% block Title %}
+<title>Account Details</title>
+{% endblock %} {% block content %}
+<h1>Account Details</h1>
+{%for m in user%}
+<hr />
+<p>User: {{m.username}}</p>
+<p><strong>First Name:</strong> {{ m.first_name }}</p>
+<p><strong>Last Name:</strong> {{ m.last_name }}</p>
+<p><strong>Email:</strong> {{ m.email }}</p>
+
+<hr />
+{% endfor%} {% endblock content %}

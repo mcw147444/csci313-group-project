@@ -4,9 +4,6 @@
 <h1 class="fs-1">Account</h1>
 {% if user.is_authenticated %}
 <p>Your account is: {{ user.username }}</p>
-<p><strong>First Name:</strong> {{ user.first_name }}</p>
-<p><strong>Last Name:</strong> {{ user.last_name }}</p>
-<p><strong>Email:</strong> {{ user.email }}</p>
 <p>
   <a href="{% url 'admin:logout' %}">Logout</a>
 </p>

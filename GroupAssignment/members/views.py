@@ -14,6 +14,10 @@ def LoanedBooksView(request):
     instance_list=Book_Instance.objects.filter(borrower=request.user)
     instance_dictionary={'instance':instance_list}
     return render(request,'account/loaned_books.html',context=instance_dictionary)
+def AccountDetails(request):
+    user_list=User.objects.filter(username=request.user.username)
+    user_dictionary={'user':user_list}
+    return render(request,'account/account_detail.html',context=user_dictionary)
 
 class MemberDetailView(generic.DetailView):
     model = Member
