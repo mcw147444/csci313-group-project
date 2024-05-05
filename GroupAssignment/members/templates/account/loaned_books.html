@@ -1,0 +1,15 @@
+{% extends "members_base_generic.html" %} {% block Title %}
+<title>Books you have checked out</title>
+{% endblock %} {% block content %}
+<h1>Loaned books</h1>
+{%for b in instance%}
+<hr />
+<p>{{b.book.title}} #{{b.id}}</p>
+<p>Borrowed by: {{b.borrower}}</p>
+<p>Status: {{b.status}}</p>
+<p>Language:{{b.language}}</p>
+<p>Date checked out: {{b.date_checked_out}}</p>
+<p>Date due back: {{b.due_back}}</p>
+
+<hr />
+{% endfor%} {% endblock content %}
